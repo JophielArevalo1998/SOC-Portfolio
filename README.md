@@ -125,6 +125,30 @@ Triaged and investigated alerts across SIEM and EDR platforms. Deployed Wazuh, Z
 | [Let's Defend — SOC Analyst Pathway](https://github.com/JophielArevalo1998/SOC-Portfolio/tree/main/LetsDefend-Project) | Guided SOC analyst case triage including phishing, malware, and brute force investigations with structured reports. | LetsDefend, Splunk, Sentinel |
 | [KQL CTF — Apex Talent Partners Investigation](https://github.com/JophielArevalo1998/SOC-Portfolio/tree/main/KQL-CTF-INVESTIGATION) | Full attack chain reconstruction using KQL across Microsoft Defender for Endpoint telemetry. Traced initial access through lateral movement, persistence, data staging, and log clearing across 3 devices. Produced a structured incident report mapping all findings to MITRE ATT&CK. | KQL, Microsoft Sentinel, Defender for Endpoint, MITRE ATT&CK |
 
+---
+
+### 🚨 SOC Triage Cases — MyDFIR Simulator
+
+> Real-world alert triage performed on the MyDFIR SOC Simulator (mahcyberdefense.com) using Microsoft XDR, Sentinel, and Splunk. Each case includes the original alert, raw data, investigation queries, and a structured 5W1H report.
+
+| # | Case | Severity | Verdict | Platform | MITRE |
+|---|------|----------|---------|----------|-------|
+| 01 | [Anonymous IP — SOC-174 (Tor Sign-in)](https://github.com/JophielArevalo/SOC-Portfolio/tree/main/Triage-Cases/Case-01-Anonymous-IP-SOC-174.md) | Low | True Positive | Microsoft XDR | T1090.003 |
+| 02 | [ValleyRAT Multi-Stage Compromise — KCD-Web](https://github.com/JophielArevalo/SOC-Portfolio/tree/main/Triage-Cases/Case-02-ValleyRAT-KCD-Web.md) | **Critical** | True Positive — Active Intrusion | Splunk | T1219, T1547.001, T1003.001 |
+| 03 | [Credential Stuffing — MTS-ContractorPC1 (SMB Exposed)](https://github.com/JophielArevalo/SOC-Portfolio/tree/main/Triage-Cases/Case-03-Credential-Stuffing-MTS-2120.md) | Low | True Positive — Unsuccessful | Sentinel | T1110 |
+| 04 | [Credential Stuffing — MTS-ContractorPC1 (Repeat)](https://github.com/JophielArevalo/SOC-Portfolio/tree/main/Triage-Cases/Case-04-Credential-Stuffing-MTS-2121.md) | Low | True Positive — Unsuccessful | Sentinel | T1110 |
+| 05 | [CRA Impersonation Phishing — SPF/DKIM Fail](https://github.com/JophielArevalo/SOC-Portfolio/tree/main/Triage-Cases/Case-05-CRA-Phishing-Email.md) | Low | True Positive — No User Interaction | Defender | T1566.001 |
+| 06 | [Unauthorized WordPress Admin Access](https://github.com/JophielArevalo/SOC-Portfolio/tree/main/Triage-Cases/Case-06-WordPress-Admin-Login.md) | High | True Positive — Active Compromise | Sentinel | T1078, T1053.005 |
+| 07 | [RDP Login — KCD-Web (Benign)](https://github.com/JophielArevalo/SOC-Portfolio/tree/main/Triage-Cases/Case-07-KCD-RDP-Login-Benign.md) | Medium | True Positive — Benign | Splunk | T1021.001 |
+| 08 | [Anonymous IP — SOC-186 (Log Retention Expired)](https://github.com/JophielArevalo/SOC-Portfolio/tree/main/Triage-Cases/Case-08-Anonymous-IP-SOC-186.md) | Medium | True Positive — Limited Evidence | Microsoft XDR | T1090.003 |
+| 09 | [RDP Login — KCD Contractor (Authorized)](https://github.com/JophielArevalo/SOC-Portfolio/tree/main/Triage-Cases/Case-09-KCD-Contractor-RDP-Benign.md) | Medium | True Positive — Benign | Splunk | T1021.001 |
+| 10 | [SOC Account Compromise — UK Sign-in / Impossible Travel](https://github.com/JophielArevalo/SOC-Portfolio/tree/main/Triage-Cases/Case-10-SOC-Account-Compromise-UK.md) | **Critical** | True Positive — Active Compromise | Microsoft XDR | T1078.004, T1114.002 |
+
+**Key skills demonstrated across these cases:**
+`KQL Advanced Hunting` `Splunk SPL` `Sysmon Analysis` `Email Forensics` `Web Log Parsing` `OSINT (VT / AbuseIPDB)` `IOC Defanging` `Impossible Travel Detection` `APT Attribution` `MITRE ATT&CK Mapping`
+
+---
+
 ### 🦠 Malware Analysis
 
 | Project | Description | Tools |
