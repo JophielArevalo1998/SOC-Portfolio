@@ -17,7 +17,7 @@ This repository documents ten real triage cases worked through the MyDFIR SOC Si
 
 | # | Case | Severity | Verdict | Platform |
 |---|---|---|---|---|
-| 01 | [Anonymous IP — SOC-174 (Tor)](https://github.com/JophielArevalo/SOC-Portfolio/blob/main/Triage%20Investigations%20Sentinel-Splunk/Case%2001%20anonymous%20ip%20soc%20174.md) | Low | True Positive | Microsoft XDR |
+| 01 | [Anonymous IP — SOC-174 (Tor)](https://github.com/JophielArevalo1998/SOC-Portfolio/blob/main/Triage%20Investigations%20Sentinel-Splunk/Case%2001%20anonymous%20ip%20soc%20174.md) | Low | True Positive | Microsoft XDR |
 | 02 | [ValleyRAT Multi-Stage Compromise — KCD-Web](https://github.com/JophielArevalo/SOC-Portfolio/blob/main/Triage%20Investigations%20Sentinel-Splunk/Case%2002%20valleyrat%20kcd%20web.md) | Medium → Critical | True Positive — Active Intrusion | Splunk |
 | 03 | [Credential Stuffing — MTS-ContractorPC1 (Incident 2120)](https://github.com/JophielArevalo/SOC-Portfolio/blob/main/Triage%20Investigations%20Sentinel-Splunk/Case%2003%20credential%20stuffing%20mts%202120.md) | Low | True Positive — Unsuccessful | Sentinel |
 | 04 | [Credential Stuffing — MTS-ContractorPC1 (Incident 2121)](github.com/JophielArevalo/SOC-Portfolio/blob/main/Triage%20Investigations%20Sentinel-Splunk/Case%2004%20credential%) | Low | True Positive — Unsuccessful | Sentinel |
