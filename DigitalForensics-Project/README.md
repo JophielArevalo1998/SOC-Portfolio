@@ -847,12 +847,6 @@ See [`screenshots/README.md`](screenshots/README.md) for the full annotated inde
 
 ---
 
-## 📋 Command Reference
-
-See [`evidence-a/commands.md`](embeds) for a full reference of every command used across all four evidence items, with flags explained.
-
----
-
 ## 📁 Repository Structure
 
 ```
