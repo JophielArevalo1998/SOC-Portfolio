@@ -15,9 +15,10 @@ Place your `.png` files in this folder using the filenames listed below.
 
 ### 01 - Elasticsearch Installation
 **File:** `01-elasticsearch-install.png`
-**README reference:** [Phase 1.1 — Elasticsearch Installation](../README.md#11-elasticsearch-installation)
 
-**What to capture:** The terminal output immediately after running `sudo dpkg -i elasticsearch-*.deb`. The key element is the **Security autoconfiguration block** — the yellow/white text block that shows the auto-generated `elastic` superuser password, enrollment token commands, and TLS configuration confirmation.
+![Elasticsearch installation security autoconfiguration block](01-elasticsearch-install.png)
+
+**README reference:** [Phase 1.1 — Elasticsearch Installation](../README.md#11-elasticsearch-installation)
 
 **What to look for:**
 - The auto-generated password line: `The generated password for the elastic built-in superuser is:`
@@ -28,9 +29,8 @@ Place your `.png` files in this folder using the filenames listed below.
 
 ### 02 - Elasticsearch Configuration
 **File:** `02-elasticsearch-config.png`
+![elasticsearch.yml network configuration](02-elasticsearch-config.png)
 **README reference:** [Phase 1.1 — Elasticsearch Installation](../README.md#11-elasticsearch-installation)
-
-**What to capture:** The `elasticsearch.yml` file open in a terminal text editor (nano or vim) showing the network configuration section. The file is typically located at `/etc/elasticsearch/elasticsearch.yml`.
 
 **What to look for:**
 - `network.host` set to `0.0.0.0` or the server's IP
@@ -41,13 +41,8 @@ Place your `.png` files in this folder using the filenames listed below.
 
 ### 03 - Kibana Enrollment Token
 **File:** `03-kibana-token.png`
+![Kibana enrollment token in terminal](03-kibana-token.png)
 **README reference:** [Phase 1.2 — Kibana Deployment](../README.md#12-kibana-deployment)
-
-**What to capture:** The terminal output after running:
-```
-/usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
-```
-The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 **What to look for:**
 - The full enrollment token string printed to stdout
@@ -57,9 +52,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 04 - Kibana Login Page
 **File:** `04-kibana-login.png`
+![Kibana browser login page](04-kibana-login.png)
 **README reference:** [Phase 1.2 — Kibana Deployment](../README.md#12-kibana-deployment)
-
-**What to capture:** The Kibana login page in a web browser at `http://YOUR_SERVER_IP:5601`. This is the first successful browser access to Kibana after setup.
 
 **What to look for:**
 - The Elastic logo and "Welcome to Elastic" heading
@@ -70,9 +64,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 05 - Firewall Rules
 **File:** `05-firewall-rules.png`
+![Cloud firewall inbound rules](05-firewall-rules.png)
 **README reference:** [Phase 1.3 — Firewall Configuration](../README.md#13-firewall-configuration)
-
-**What to capture:** The cloud provider's firewall/security group configuration panel showing the inbound rules you've set up. This could be Vultr's firewall groups, AWS Security Groups, or DigitalOcean's Firewall rules UI.
 
 **What to look for:**
 - Port 22 restricted to your IP only (not 0.0.0.0/0)
@@ -87,9 +80,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 06 - Fleet Server Setup
 **File:** `06-fleet-server-setup.png`
+![Fleet Server setup in Kibana](06-fleet-server-setup.png)
 **README reference:** [Phase 2.1 — Fleet Server](../README.md#21-fleet-server)
-
-**What to capture:** The Kibana Fleet setup screen showing the Fleet Server configuration. Navigate to: Kibana → Management → Fleet → Settings.
 
 **What to look for:**
 - Fleet Server host URL configured
@@ -100,9 +92,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 07 - Windows Agent Installation
 **File:** `07-windows-agent-install.png`
+![PowerShell Windows agent installation](07-windows-agent-install.png)
 **README reference:** [Phase 2.2 — Windows Agent](../README.md#22-windows-agent-soc-win-jop)
-
-**What to capture:** The PowerShell terminal on the Windows machine (SOC-WIN-JOP) showing the `elastic-agent.exe install` command completing successfully, followed by a "Elastic Agent has been successfully installed" message.
 
 **What to look for:**
 - The install command with `--url`, `--enrollment-token`, and `--insecure` flags visible
@@ -113,11 +104,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 08 - Linux Agent Installation
 **File:** `08-linux-agent-install.png`
+![Linux agent install and both agents healthy in Fleet](08-linux-agent-install.png)
 **README reference:** [Phase 2.3 — Linux Agent](../README.md#23-linux-agent-soc-linux-jop)
-
-**What to capture:** Two screenshots or a split view:
-1. The terminal on the Ubuntu machine (SOC-Linux-Jop) showing the `sudo ./elastic-agent install` command completing
-2. The Kibana Fleet → Agents page showing both agents (Windows and Linux) listed as **Healthy**
 
 **What to look for:**
 - Both agents showing green "Healthy" status in Fleet
@@ -130,9 +118,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 09 - Sysmon Installation
 **File:** `09-sysmon-install.png`
+![Sysmon installation terminal output](09-sysmon-install.png)
 **README reference:** [Phase 3.1 — Sysmon Installation](../README.md#31-sysmon-installation)
-
-**What to capture:** The PowerShell terminal on the Windows machine showing the Sysmon installation command and its output confirming successful installation.
 
 **Command shown:**
 ```
@@ -148,10 +135,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 10 - Sysmon Event Viewer
 **File:** `10-sysmon-event-viewer.png`
+![Sysmon events in Windows Event Viewer](10-sysmon-event-viewer.png)
 **README reference:** [Phase 3.1 — Sysmon Installation](../README.md#31-sysmon-installation)
-
-**What to capture:** Windows Event Viewer open to the Sysmon operational log:
-`Applications and Services Logs → Microsoft → Windows → Sysmon → Operational`
 
 **What to look for:**
 - Events populating in the log (Event IDs 1, 3, 7, etc.)
@@ -162,9 +147,9 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 11 - Windows Event Log Integration
 **File:** `11-event-log-integration.png`
-**README reference:** [Phase 3.2 — Windows Event Log Integration](../README.md#32-windows-event-log-integration)
 
-**What to capture:** The Kibana Fleet integration configuration screen for Windows Event Logs, showing the custom Sysmon channel being added.
+![Sysmon channel configured in Fleet integration](11-event-log-integration.png)
+**README reference:** [Phase 3.2 — Windows Event Log Integration](../README.md#32-windows-event-log-integration)
 
 **What to look for:**
 - The custom channel name: `Microsoft-Windows-Sysmon/Operational`
@@ -174,9 +159,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 12 - Defender Event Integration
 **File:** `12-defender-integration.png`
+![Defender channel configured in Fleet integration](12-defender-integration.png)
 **README reference:** [Phase 3.2 — Windows Event Log Integration](../README.md#32-windows-event-log-integration)
-
-**What to capture:** Similar to screenshot 11 but showing the Windows Defender channel configuration with specific Event IDs (1116, 1117, 5001).
 
 **What to look for:**
 - Defender channel: `Microsoft-Windows-Windows Defender/Operational`
@@ -188,9 +172,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 13 - SSH Brute Force Alert
 **File:** `13-ssh-alert-config.png`
+![SSH brute force alert configuration](13-ssh-alert-config.png)
 **README reference:** [Phase 4.1 — SSH Brute Force Alert](../README.md#41-ssh-brute-force-alert)
-
-**What to capture:** The Kibana alert creation screen with the SSH brute force alert configured. Navigate to: Kibana → Alerts → Create alert (or from the Discover page via the alert button top-right).
 
 **What to look for:**
 - The KQL query: `system.auth.ssh.event: "Failed" and agent.name: "SOC-Linux-Jop"`
@@ -202,9 +185,9 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 14 - SSH Brute Force Map Dashboard
 **File:** `14-ssh-map-dashboard.png`
-**README reference:** [Phase 4.1 — SSH Brute Force Alert](../README.md#41-ssh-brute-force-alert)
+![SSH attacks world map dashboard](14-ssh-map-dashboard.png)
 
-**What to capture:** The completed Kibana Maps visualization showing a world map with countries highlighted based on SSH attack origin. Countries with many attacks should appear with more intense coloring (choropleth style).
+**README reference:** [Phase 4.1 — SSH Brute Force Alert](../README.md#41-ssh-brute-force-alert)
 
 **What to look for:**
 - World map with country-level color gradients
@@ -215,9 +198,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 15 - RDP Brute Force Alert
 **File:** `15-rdp-alert.png`
+![RDP brute force alert configuration](15-rdp-alert.png)
 **README reference:** [Phase 4.2 — RDP Brute Force Alert](../README.md#42-rdp-brute-force-alert)
-
-**What to capture:** The alert configuration for RDP failed logon detection using Event ID 4625.
 
 **What to look for:**
 - Query: `event.code: "4625" and agent.name: "SOC-WIN-JOP"`
@@ -228,9 +210,9 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 16 - RDP Activity Dashboard
 **File:** `16-rdp-dashboard.png`
+![RDP full activity dashboard](16-rdp-dashboard.png)
 **README reference:** [Phase 4.2 — RDP Brute Force Alert](../README.md#42-rdp-brute-force-alert)
 
-**What to capture:** The full RDP activity dashboard in Kibana showing multiple panels: a map of attacker countries, a table of failed attempts, and a table of successful logins.
 
 **What to look for:**
 - Multiple visualization panels on one dashboard
@@ -241,14 +223,15 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 17 - RDP Map
 **File:** `17-rdp-map.png`
+![RDP attackers world map](17-rdp-map.png)
 **README reference:** [Phase 4.3 — Dashboards](../README.md#43-dashboards)
 
-**What to capture:** The Kibana Maps layer showing countries from which RDP attacks originated — similar to the SSH map but filtered for Windows RDP events.
 
 ---
 
 ### 18 - RDP Tables
 **File:** `18-rdp-tables.png`
+![RDP failed and successful logon tables](18-rdp-tables.png)
 **README reference:** [Phase 4.3 — Dashboards](../README.md#43-dashboards)
 
 **What to capture:** The table visualizations within the RDP dashboard showing IP addresses, usernames, timestamps, and logon types side by side.
@@ -259,9 +242,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 19 - Mythic C2 Installation
 **File:** `19-mythic-install.png`
+![Mythic Docker containers starting](19-mythic-install.png)
 **README reference:** [Phase 5.1 — Mythic C2 Setup](../README.md#51-mythic-c2-setup)
-
-**What to capture:** The terminal on the Mythic server showing the `./mythic-cli start` command running and all containers coming up successfully. Docker containers should all show as `Up`.
 
 **What to look for:**
 - All Mythic service containers starting (mythic_server, mythic_postgres, mythic_rabbitmq, etc.)
@@ -272,9 +254,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 20 - Mythic Web UI
 **File:** `20-mythic-ui.png`
+![Mythic web UI dashboard](20-mythic-ui.png)
 **README reference:** [Phase 5.1 — Mythic C2 Setup](../README.md#51-mythic-c2-setup)
-
-**What to capture:** The Mythic web interface in a browser at `https://YOUR_MYTHIC_IP:7443` after successful login.
 
 **What to look for:**
 - Mythic dashboard homepage
@@ -285,9 +266,9 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 21 - Apollo Payload Creation
 **File:** `21-apollo-payload.png`
+![Apollo payload creation form](21-apollo-payload.png)
 **README reference:** [Phase 5.2 — Apollo Agent & Payload](../README.md#52-apollo-agent--payload)
 
-**What to capture:** The Mythic payload generation screen showing the Apollo configuration before clicking "Create Payload."
 
 **What to look for:**
 - Agent: Apollo selected
@@ -300,9 +281,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 22 - Hydra RDP Brute Force
 **File:** `22-hydra-attack.png`
+![Hydra brute force attack and success output](22-hydra-attack.png)
 **README reference:** [Phase 5.3 — Attack Execution](../README.md#53-attack-execution)
-
-**What to capture:** The Kali Linux terminal showing Hydra running the RDP brute force attack, followed by the successful login discovery output.
 
 **What to look for:**
 - The `hydra` command with all flags visible
@@ -314,9 +294,9 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 23 - RDP Session from Kali
 **File:** `23-rdp-from-kali.png`
+![RDP session open from Kali Linux](23-rdp-from-kali.png)
 **README reference:** [Phase 5.3 — Attack Execution](../README.md#53-attack-execution)
 
-**What to capture:** The xfreerdp session open on Kali, showing the Windows desktop of the target machine (SOC-WIN-JOP) rendered inside the Kali window.
 
 **What to look for:**
 - Windows desktop visible inside the Kali terminal/window
@@ -327,9 +307,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 24 - Mythic C2 Callback
 **File:** `24-mythic-callback.png`
+![Active C2 callback in Mythic](24-mythic-callback.png)
 **README reference:** [Phase 5.3 — Attack Execution](../README.md#53-attack-execution)
-
-**What to capture:** The Mythic web UI → **Callbacks** tab showing the new active callback from the Windows victim machine after the payload was executed.
 
 **What to look for:**
 - New callback entry with the victim machine's hostname or IP
@@ -343,9 +322,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 25 - osTicket Setup
 **File:** `25-osticket-setup.png`
+![osTicket web installer](25-osticket-setup.png)
 **README reference:** [Phase 6.1 — osTicket Setup](../README.md#61-osticket-setup-windows--xampp)
-
-**What to capture:** The osTicket web installer at `http://YOUR_IP/osticket/upload/setup/` showing the installation wizard mid-setup with database and admin credentials being configured.
 
 **What to look for:**
 - Database connection details filled in
@@ -356,9 +334,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 26 - osTicket Portal
 **File:** `26-osticket-portal.png`
+![osTicket staff control panel](26-osticket-portal.png)
 **README reference:** [Phase 6.1 — osTicket Setup](../README.md#61-osticket-setup-windows--xampp)
-
-**What to capture:** The osTicket Staff Control Panel (SCP) after successful login at `http://YOUR_IP/osticket/upload/scp`.
 
 **What to look for:**
 - osTicket dashboard showing ticket queue
@@ -369,9 +346,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 27 - Elastic Webhook Connector
 **File:** `27-webhook-connector.png`
+![Kibana webhook connector configuration](27-webhook-connector.png)
 **README reference:** [Phase 6.2 — Elastic → osTicket Webhook Integration](../README.md#62-elastic--osticket-webhook-integration)
-
-**What to capture:** The Kibana Connector configuration screen for the osTicket webhook. Navigate to: Management → Alerts and Insights → Connectors → Webhook connector config.
 
 **What to look for:**
 - URL field pointing to osTicket API endpoint
@@ -383,9 +359,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 28 - Auto-Generated Ticket
 **File:** `28-osticket-ticket.png`
+![Auto-generated alert ticket in osTicket](28-osticket-ticket.png)
 **README reference:** [Phase 6.2 — Elastic → osTicket Webhook Integration](../README.md#62-elastic--osticket-webhook-integration)
-
-**What to capture:** The osTicket SCP showing a ticket that was automatically created by an Elastic alert firing — proof the integration works end-to-end.
 
 **What to look for:**
 - Ticket subject matching the alert name (e.g., "SSH Brute Force Detected")
@@ -399,12 +374,10 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 29 - Mythic C2 Hunting
 **File:** `29-c2-hunting.png`
+![Sysmon Event ID 3 C2 beaconing traffic](29-c2-hunting.png)
 **README reference:** [Phase 7.2 — Mythic C2 Detection & Hunting](../README.md#72-mythic-c2-detection--hunting)
 
-**What to capture:** The Kibana Discover view with the Sysmon Event ID 3 query active, showing outbound network connections from the payload (svchost-jop.exe) to the Mythic server IP.
-
 **What to look for:**
-- Event ID 3 (network connection) events from `svchost-jop.exe`
 - Destination IP matching the Mythic server
 - Port 80 connections indicating HTTP C2 beaconing
 - Regular time intervals (beaconing pattern visible in the timeline)
@@ -413,6 +386,7 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 30 - Attack Timeline
 **File:** `30-c2-timeline.png`
+![Full attack timeline reconstruction in Kibana](30-c2-timeline.png)
 **README reference:** [Phase 7.2 — Mythic C2 Detection & Hunting](../README.md#72-mythic-c2-detection--hunting)
 
 **What to capture:** A Kibana view showing the sequence of attacker activity reconstructed from Sysmon events — the full attack timeline from initial access to C2 establishment.
@@ -431,9 +405,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 31 - EDR Malware Prevention
 **File:** `31-edr-prevention.png`
+![Payload blocked by Elastic Defend EDR](31-edr-prevention.png)
 **README reference:** [Phase 8 — Elastic EDR](../README.md#phase-8--elastic-edr)
-
-**What to capture:** The error/prevention message that appears when trying to re-execute the Apollo payload after Elastic Defend is enabled with prevention mode. This could be a Windows notification balloon or a terminal error message.
 
 **What to look for:**
 - Windows security notification: "Threat found" or "Action blocked"
@@ -444,9 +417,8 @@ The enrollment token is a long Base64 string (starts with `eyJ2ZXIi...`).
 
 ### 32 - EDR Alert Detail
 **File:** `32-edr-alert.png`
+![Malware prevention alert detail in Kibana](32-edr-alert.png)
 **README reference:** [Phase 8 — Elastic EDR](../README.md#phase-8--elastic-edr)
-
-**What to capture:** The Kibana Security → Alerts view showing the malware prevention alert generated by Elastic Defend, including the full alert detail panel with process information, file hash, and prevention action taken.
 
 **What to look for:**
 - Alert severity: Critical or High
