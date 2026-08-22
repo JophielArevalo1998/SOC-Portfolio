@@ -34,7 +34,7 @@
 7. [Timeline Analysis](#-timeline-analysis)
 8. [Final Conclusions](#-final-conclusions)
 9. [Screenshots Index](#-screenshots-index)
-10. [Command Reference](#-command-reference)
+
 
 ---
 
