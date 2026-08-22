@@ -127,9 +127,9 @@ Triaged and investigated alerts across SIEM and EDR platforms. Deployed Wazuh, Z
 
 ---
 
-### 🚨 SOC Triage Cases — MyDFIR Simulator
+### 🚨 SOC Triage Cases
 
-> Real-world alert triage performed on the MyDFIR SOC Simulator (mahcyberdefense.com) using Microsoft XDR, Sentinel, and Splunk. Each case includes the original alert, raw data, investigation queries, and a structured 5W1H report.
+> Alert triage performed on the MyDFIR SOC (mahcyberdefense.com) using Microsoft XDR, Sentinel, and Splunk. Each case includes the original alert, raw data, investigation queries, and a structured 5W1H report.
 
 | # | Case | Severity | Verdict | Platform |
 |---|---|---|---|---|
