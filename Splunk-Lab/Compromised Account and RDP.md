@@ -1,6 +1,3 @@
-lINK: https://github.com/JophielArevalo/SOC-Portfolio/blob/main/Triage%20Investigations%20Sentinel-Splunk/KCD%20-%20Identity%20-%20Potential%20RDP%20Login%20Detected.md
-
-
 # 🔴 SOC Investigation — KCD Contractor Account Compromise & RDP Backdoor
 
 **Simulator:** MyDFIR SOC Simulator (mahcyberdefense.com)  
