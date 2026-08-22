@@ -137,7 +137,7 @@ Triaged and investigated alerts across SIEM and EDR platforms. Deployed Wazuh, Z
 
 | Project | Description | Tools |
 |---------|-------------|-------|
-| [Network Security Lab](https://github.com/JophielArevalo/SOC-Portfolio/tree/main/Network-Security-Lab) | Designed and validated a segmented network with DMZ, dual gateways, NAT, BIND9 DNS, Postfix email, Squid proxy with ACLs, iptables default-deny firewall, and OpenVPN. Verified end-to-end service availability and policy enforcement across all layers. | Apache, BIND9, Postfix, Squid, iptables, OpenVPN, Ubuntu Server |
+| [Network Security Lab](https://github.com/JophielArevalo1998/SOC-Portfolio/tree/main/Network-Security-Lab) | Designed and validated a segmented network with DMZ, dual gateways, NAT, BIND9 DNS, Postfix email, Squid proxy with ACLs, iptables default-deny firewall, and OpenVPN. Verified end-to-end service availability and policy enforcement across all layers. | Apache, BIND9, Postfix, Squid, iptables, OpenVPN, Ubuntu Server |
 
 ---
 
