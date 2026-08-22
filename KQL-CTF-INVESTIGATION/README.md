@@ -778,7 +778,7 @@ See [`screenshots/README.md`](screenshots/README.md) for the full annotated inde
 
 ## 📋 KQL Query Reference
 
-See [`queries/all-queries.md`](/all-queries.md) for every query used in this investigation, cleaned and ready to copy-paste into Sentinel.
+See [`all-queries.md`](all-queries.md) for every query used in this investigation, cleaned and ready to copy-paste into Sentinel.
 
 ---
 
