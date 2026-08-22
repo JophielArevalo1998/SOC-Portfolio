@@ -1,5 +1,3 @@
-Link: https://github.com/JophielArevalo/SOC-Portfolio/tree/main/digital_forensic
-
 # 🔍 Digital Forensics Investigation — Alex Marshall Case
 
 > A full end-to-end **Digital Forensics and Incident Response (DFIR)** investigation conducted as part of a Master of Cybersecurity major assignment. Four pieces of evidence are analysed — a **disk image**, a **network packet capture**, a **memory dump**, and a **mobile phone image** — to reconstruct the events surrounding the suspicious death of a university student, Alex Marshall.
