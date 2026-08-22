@@ -1,4 +1,4 @@
-# 🛡️ Elastic SOC Lab — 30-Day Challenge
+# 🛡️ Elastic SOC Project
 
 > A hands-on, end-to-end Security Operations Centre (SOC) lab built from scratch using the **Elastic Stack (ELK)**, **Elastic Agent**, **Sysmon**, **Mythic C2**, and **osTicket**. This repository documents every step — from infrastructure provisioning to attack simulation and incident investigation.
 
