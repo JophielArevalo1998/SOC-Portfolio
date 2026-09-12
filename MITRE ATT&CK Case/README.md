@@ -252,8 +252,3 @@ Filtering the domain controller's process-creation events down to real interacti
 └── screenshots/
     ├── case-study-1-network-intrusion/
     └── case-study-2-full-compromise/
-```
-
-## About
-
-Investigations conducted and documented by Jophiel Arevalo Enriquez as part of an ongoing walkthrough of the MITRE ATT&CK Enterprise Matrix, tactic by tactic, using hands-on packet and log analysis.
