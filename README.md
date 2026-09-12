@@ -8,7 +8,7 @@
 
 ## 👋 About Me
 
-I'm a **SOC Analyst** aspirant with a Master of Cybersecurity (First Class Honours, Griffith University) and hands-on experience across **SIEM monitoring, EDR investigation, detection engineering, and incident response**.
+**Aspiring SOC Analyst** with a Master of Cybersecurity (First Class Honours, Griffith University) and hands-on experience across **SIEM monitoring, EDR investigation, detection engineering, and incident response**.
 
 I build real lab environments, simulate attacks, and develop detections — not just follow tutorials. My work spans Active Directory compromise, C2 framework deployment, brute force detection, digital forensics investigation, malware analysis, and network security engineering, all documented end-to-end in this portfolio.
 
