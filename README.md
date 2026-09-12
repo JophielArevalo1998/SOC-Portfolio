@@ -133,7 +133,7 @@ Triaged and investigated alerts across SIEM and EDR platforms. Deployed Wazuh, Z
 
 | Project | Description | Tools |
 |---------|-------------|-------|
-| [MITRE ATT&CK Walkthrough — Two Incident Case Studies](https://github.com/JophielArevalo1998/MITRE-ATTACK-Walkthrough) | Two full investigations mapped against the ATT&CK matrix: a network intrusion traced entirely through Wireshark (network scanning, PsExec-based lateral movement, DNS-tunneled exfiltration), and a complete endpoint compromise traced through Splunk/Sysmon — brute force → privilege escalation → RDP lateral movement → defense evasion → execution → C2 → persistence → discovery → credential dumping → collection → cloud exfiltration → impact (12 techniques, one continuous kill chain). Each technique includes the query used and why it's built that way. | Wireshark, Splunk, CyberChef, VirusTotal, AbuseIPDB |
+| [MITRE ATT&CK Walkthrough — Two Incident Case Studies](https://github.com/JophielArevalo1998/SOC-Portfolio/tree/main/MITRE%20ATT%26CK%20Case) | Two full investigations mapped against the ATT&CK matrix: a network intrusion traced entirely through Wireshark (network scanning, PsExec-based lateral movement, DNS-tunneled exfiltration), and a complete endpoint compromise traced through Splunk/Sysmon — brute force → privilege escalation → RDP lateral movement → defense evasion → execution → C2 → persistence → discovery → credential dumping → collection → cloud exfiltration → impact (12 techniques, one continuous kill chain). Each technique includes the query used and why it's built that way. | Wireshark, Splunk, CyberChef, VirusTotal, AbuseIPDB |
 
 ---
 
