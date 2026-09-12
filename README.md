@@ -21,7 +21,7 @@ Currently holding **Visa 485 with full work rights until 2028**.
 **Cyber Security Analyst Trainee** — MyDFIR Community *(Apr 2026 – Present)*  
 Building and operating SOC lab environments using Splunk, Elastic, and Microsoft Defender. Simulating attacks across Active Directory and Microsoft 365, conducting structured investigations, and developing tuned detection rules.
 
-**SOC Analyst Intern** — Secure DevLabs *(Mar 2026 – May 2026)*  
+**SOC Analyst Intern** — Secure DevLabs *(Jan 2026 – Mar 2026)*  
 Triaged and investigated alerts across SIEM and EDR platforms. Deployed Wazuh, Zeek, and Suricata. Extracted IOCs aligned with MITRE ATT&CK and supported incident response workflows including escalation and documentation.
 
 ---
