@@ -17,7 +17,7 @@ Each case study below tells the attack as a chronological story. Every step name
  
 An attacker scans the internal network to find live hosts and open services, then uses a stolen local account to push a renamed PsExec binary onto a workstation over SMB, using it to read sensitive files and create a persistence-friendly Windows service. Later, the same attacker infrastructure exfiltrates a password file by hiding it inside DNS queries.
  
-## 1. Discovery — Network Service Scanning (`T1046`)
+### 1. Discovery — Network Service Scanning (`T1046`)
 *Sweeps the network for live hosts and open ports before deciding where to go next.*
  
 The attacker (`192.168.1.212`) opened its first SYN packet at **2024-02-02 14:40:36 UTC**, probing four internal hosts (`.101`–`.104`) across 20 distinct ports. The first SYN/ACK response — confirming an open port — landed on packet #26, from `.104:3389`, meaning RDP was listening. A second RDP hit came back from `.102`. Every other connection attempt was immediately closed with a RST, the classic signature of a fast TCP connect scan rather than a stealth SYN scan.
@@ -30,7 +30,11 @@ The attacker (`192.168.1.212`) opened its first SYN packet at **2024-02-02 14:40
  
 <img src="screenshots/case-study-1-network-intrusion/01-discovery-portscan-overview.png" width="700"/>
 <img src="screenshots/case-study-1-network-intrusion/02-discovery-syn-ack-rst.png" width="700"/>
-## 2. Lateral Movement — SMB/Windows Admin Shares & Service Execution (`T1021.002`, `T1569.002`)
+
+
+### 2. Lateral Movement — SMB/Windows Admin Shares & Service Execution (`T1021.002`, `T1569.002`)
+
+
 *Uses a valid account to push a tool over SMB and run it as a Windows service.*
  
 Using the account `kporter`, the attacker authenticated to `DESKTOP-SALES` over SMB, connected to the `ADMIN$` share, and dropped a binary named `googleupdate.exe`. Before writing it, the attacker read three text files off the host (`Maple.txt`, `Orbis.txt`, `Zakum.txt`) that turned out to contain PII — names, job titles, phone numbers, and a credit card number in plaintext. The dropped binary's hash matched VirusTotal's `psexesvc.exe` signature (`trojan.psexec`) — this is PsExec's service component, confirming the attacker used PsExec-style remote service creation to get code execution.
