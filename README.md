@@ -1,8 +1,8 @@
 # 🔐 Cybersecurity Portfolio — Jophiel Arevalo Enriquez
 
 <a href="https://www.linkedin.com/in/jophiel-arevalo-enriquez001/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://github.com/JophielArevalo"><img src="https://img.shields.io/badge/-GitHub-181717?&style=for-the-badge&logo=github&logoColor=white" /></a>
-<a href="https://linkly.link/2eHMI"><img src="https://img.shields.io/badge/-Portfolio%20Website-FF5722?&style=for-the-badge&logo=google-chrome&logoColor=white" /></a>
+<a href="https://github.com/JophielArevalo1998"><img src="https://img.shields.io/badge/-GitHub-181717?&style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://jophielarev.carrd.co/"><img src="https://img.shields.io/badge/-Portfolio%20Website-FF5722?&style=for-the-badge&logo=google-chrome&logoColor=white" /></a>
 
 ---
 
@@ -18,7 +18,7 @@ Currently holding **Visa 485 with full work rights until 2028**.
 
 ## 💼 Experience
 
-**DFIR Intern** — MyDFIR Community *(Apr 2026 – Present)*  
+**Cyber Security Analyst Trainee** — MyDFIR Community *(Apr 2026 – Present)*  
 Building and operating SOC lab environments using Splunk, Elastic, and Microsoft Defender. Simulating attacks across Active Directory and Microsoft 365, conducting structured investigations, and developing tuned detection rules.
 
 **SOC Analyst Intern** — Secure DevLabs *(Mar 2026 – May 2026)*  
