@@ -8,7 +8,7 @@
 
 ## 👋 About Me
 
-I'm a **SOC Analyst** with a Master of Cybersecurity (First Class Honours, Griffith University) and hands-on experience across **SIEM monitoring, EDR investigation, detection engineering, and incident response**.
+I'm a **SOC Analyst** aspirant with a Master of Cybersecurity (First Class Honours, Griffith University) and hands-on experience across **SIEM monitoring, EDR investigation, detection engineering, and incident response**.
 
 I build real lab environments, simulate attacks, and develop detections — not just follow tutorials. My work spans Active Directory compromise, C2 framework deployment, brute force detection, digital forensics investigation, malware analysis, and network security engineering, all documented end-to-end in this portfolio.
 
@@ -127,6 +127,16 @@ Triaged and investigated alerts across SIEM and EDR platforms. Deployed Wazuh, Z
 
 ---
 
+### 🧭 MITRE ATT&CK Technique Walkthrough
+
+> An ongoing project working through the MITRE ATT&CK Enterprise Matrix tactic by tactic, using real evidence rather than definitions — two independent incidents analyzed end-to-end, with every technique tied back to the exact query used to find it.
+
+| Project | Description | Tools |
+|---------|-------------|-------|
+| [MITRE ATT&CK Walkthrough — Two Incident Case Studies](https://github.com/JophielArevalo1998/MITRE-ATTACK-Walkthrough) | Two full investigations mapped against the ATT&CK matrix: a network intrusion traced entirely through Wireshark (network scanning, PsExec-based lateral movement, DNS-tunneled exfiltration), and a complete endpoint compromise traced through Splunk/Sysmon — brute force → privilege escalation → RDP lateral movement → defense evasion → execution → C2 → persistence → discovery → credential dumping → collection → cloud exfiltration → impact (12 techniques, one continuous kill chain). Each technique includes the query used and why it's built that way. | Wireshark, Splunk, CyberChef, VirusTotal, AbuseIPDB |
+
+---
+
 ### 🚨 SOC Triage Cases
 
 > Alert triage performed on the MyDFIR SOC (mahcyberdefense.com) using Microsoft XDR, Sentinel, and Splunk. Each case includes the original alert, raw data, investigation queries, and a structured 5W1H report.
@@ -179,9 +189,9 @@ Each fully documented project folder contains:
 ## 📫 Contact
 
 **Email:** joparevalo@gmail.com  
-**LinkedIn:** https://linkly.link/2eHME  
+**LinkedIn:** https://www.linkedin.com/in/jophiel-arevalo-enriquez001/ 
 **GitHub:** https://github.com/JophielArevalo1998  
-**Portfolio:** https://linkly.link/2eHMI
+**Portfolio:** https://jophielarev.carrd.co/
 
 ---
 
