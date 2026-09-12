@@ -141,6 +141,3 @@ At **16:51:02 UTC**, a file named `isthisransomware.exe` ran twice from `C:\Wind
     └── case-study-2-full-compromise/
 ```
 
-## About
-
-Investigations conducted and documented by Jophiel Arevalo Enriquez as part of an ongoing walkthrough of the MITRE ATT&CK Enterprise Matrix, tactic by tactic, using hands-on packet and log analysis.
